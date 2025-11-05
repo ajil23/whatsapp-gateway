@@ -377,7 +377,7 @@ app.post('/api/logout', async (req, res) => {
 });
 
 // Start server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3006;
 app.listen(PORT, () => {
     console.log(`WhatsApp API Server running on port ${PORT}`);
     console.log(`API Base URL: http://localhost:${PORT}/api`);

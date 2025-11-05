@@ -1,0 +1,12 @@
+services:
+  whatsapp-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: whatsapp-api
+    ports:
+      - "3006:3006"   # Sesuaikan dengan port server.js
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+    shm_size: "1gb"   # Penting untuk Puppeteer agar Chromium tidak crash

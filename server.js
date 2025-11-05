@@ -392,4 +392,4 @@ app.listen(PORT, () => {
 });
 
 // Initialize client on startup (optional - comment this if you want manual start)
-initializeClient();
+// initializeClient();
